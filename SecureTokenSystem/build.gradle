@@ -1,0 +1,19 @@
+apply plugin:'java'
+apply plugin:'war'
+apply plugin:'eclipse-wtp'
+
+
+repositories{
+	mavenLocal()
+	mavenCentral()
+}
+dependencies{ 
+	compile "javax.servlet:javax.servlet-api:3.1.0"
+	compile "javassist:javassist:3.12.1.GA"
+	 }
+
+sourceSets{
+	src{
+		main{ java{} resources{} }
+	}
+}
